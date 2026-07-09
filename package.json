@@ -1,0 +1,16 @@
+{
+  "name": "medishare-root",
+  "version": "1.0.0",
+  "description": "MediShare - Medicine Donation and Distribution System",
+  "scripts": {
+    "install-backend": "cd backend && npm.cmd install",
+    "install-frontend": "cd frontend && npm.cmd install --legacy-peer-deps",
+    "install-all": "npm.cmd run install-backend && npm.cmd run install-frontend",
+    "backend": "cd backend && npm.cmd run start",
+    "frontend": "cd frontend && npm.cmd run dev",
+    "dev": "concurrently \"npm.cmd run backend\" \"npm.cmd run frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
